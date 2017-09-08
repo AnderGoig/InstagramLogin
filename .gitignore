@@ -21,6 +21,7 @@ profile
 DerivedData
 *.hmap
 *.ipa
+Pods/
 
 # Bundler
 .bundle
