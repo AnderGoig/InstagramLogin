@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.2] - 2017-09-10
+### Added
+- Carthage support.
+
 ## [1.0.1] - 2017-09-09
 ### Added
 - Travis CI support.
@@ -16,5 +20,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Initial release of IGAuth.
 
-[Unreleased]: https://github.com/AnderGoig/IGAuth/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/AnderGoig/IGAuth/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/AnderGoig/IGAuth/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/AnderGoig/IGAuth/compare/v1.0.0...v1.0.1

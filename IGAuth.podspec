@@ -7,7 +7,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IGAuth'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'A simple way to authenticate an Instagram account on iOS.'
 
   s.description      = <<-DESC
