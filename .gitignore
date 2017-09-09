@@ -1,9 +1,6 @@
 # OS X
 .DS_Store
 
-# Private
-Constants.swift
-
 # Xcode
 build/
 *.pbxuser
@@ -25,5 +22,11 @@ DerivedData
 # Bundler
 .bundle
 
-Carthage
+# Cocoapods
 Pods/
+
+# Carthage
+Carthage/
+
+# Other
+Constants.swift
