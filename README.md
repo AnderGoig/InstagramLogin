@@ -101,10 +101,6 @@ vc.allowOnePasswordIntegration = false // true by default
 show(vc, sender: self)
 ```
 
-## Author
-
-Ander Goig, [goig.ander@gmail.com](mailto:goig.ander@gmail.com)
-
 ## Contributing to this project
 
 If you have feature requests or bug reports, feel free to help out by sending pull requests or by [creating new issues](https://github.com/AnderGoig/IGAuth/issues/new). Please take a moment to
@@ -121,3 +117,9 @@ review the guidelines written by [Nicolas Gallagher](https://github.com/necolas)
 ## Credits
 
 `IGAuth` is brought to you by [Ander Goig](https://github.com/AnderGoig) and [contributors to the project](https://github.com/AnderGoig/IGAuth/contributors). If you're using `IGAuth` in your project, attribution would be very appreciated.
+
+## Author
+
+Ander Goig – [goig.ander@gmail.com](mailto:goig.ander@gmail.com)
+
+[https://github.com/AnderGoig/IGAuth](https://github.com/AnderGoig/IGAuth)
