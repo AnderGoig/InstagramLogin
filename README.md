@@ -7,7 +7,7 @@
 
 > IGAuth allows iOS developers to authenticate users by their Instagram accounts.
 
-Handles all the **Instagram authentication** process by showing a custom `UIViewController` with the login page and returning an access token that can be used to [request data from Instagram](https://www.instagram.com/developer/endpoints/).
+`IGAuth` handles all the **Instagram authentication** process by showing a custom `UIViewController` with the login page and returning an access token that can be used to [request data from Instagram](https://www.instagram.com/developer/endpoints/).
 
 Inspired by projects like [InstagramAuthViewController](https://github.com/Isuru-Nanayakkara/InstagramAuthViewController) and [InstagramSimpleOAuth](https://github.com/rbaumbach/InstagramSimpleOAuth), because of the need for a **simple** and **easy** way to authenticate Instagram users.
 
@@ -105,6 +105,19 @@ show(vc, sender: self)
 
 Ander Goig, [goig.ander@gmail.com](mailto:goig.ander@gmail.com)
 
+## Contributing to this project
+
+If you have feature requests or bug reports, feel free to help out by sending pull requests or by [creating new issues](https://github.com/AnderGoig/IGAuth/issues/new). Please take a moment to
+review the guidelines written by [Nicolas Gallagher](https://github.com/necolas):
+
+* [Bug reports](https://github.com/necolas/issue-guidelines/blob/master/CONTRIBUTING.md#bugs)
+* [Feature requests](https://github.com/necolas/issue-guidelines/blob/master/CONTRIBUTING.md#features)
+* [Pull requests](https://github.com/necolas/issue-guidelines/blob/master/CONTRIBUTING.md#pull-requests)
+
 ## License
 
-IGAuth is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
+`IGAuth` is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
+
+## Credits
+
+`IGAuth` is brought to you by [Ander Goig](https://github.com/AnderGoig) and [contributors to the project](https://github.com/AnderGoig/IGAuth/contributors). If you're using `IGAuth` in your project, attribution would be very appreciated.
