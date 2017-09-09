@@ -1,9 +1,10 @@
 # IGAuth
 
 [![CI Status](http://img.shields.io/travis/AnderGoig/IGAuth.svg?style=flat)](https://travis-ci.org/AnderGoig/IGAuth)
-[![Version](https://img.shields.io/cocoapods/v/IGAuth.svg?style=flat)](http://cocoapods.org/pods/IGAuth)
 [![License](https://img.shields.io/cocoapods/l/IGAuth.svg?style=flat)](http://cocoapods.org/pods/IGAuth)
 [![Platform](https://img.shields.io/cocoapods/p/IGAuth.svg?style=flat)](http://cocoapods.org/pods/IGAuth)
+[![Version](https://img.shields.io/cocoapods/v/IGAuth.svg?style=flat)](http://cocoapods.org/pods/IGAuth)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 > IGAuth allows iOS developers to authenticate users by their Instagram accounts.
 
