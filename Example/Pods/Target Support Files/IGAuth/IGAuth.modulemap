@@ -1,6 +1,0 @@
-framework module IGAuth {
-  umbrella header "IGAuth-umbrella.h"
-
-  export *
-  module * { export * }
-}

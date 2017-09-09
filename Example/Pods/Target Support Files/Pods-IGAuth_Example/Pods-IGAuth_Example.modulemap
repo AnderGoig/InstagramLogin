@@ -1,6 +1,0 @@
-framework module Pods_IGAuth_Example {
-  umbrella header "Pods-IGAuth_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}
