@@ -114,7 +114,7 @@ review the guidelines written by [Nicolas Gallagher](https://github.com/necolas)
 
 `IGAuth` is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
 
-## Author
+## Author
 
 Ander Goig, [goig.ander@gmail.com](mailto:goig.ander@gmail.com)
 
