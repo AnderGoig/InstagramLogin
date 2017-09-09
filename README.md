@@ -40,7 +40,7 @@ Third, go ahead and test it! :rocket:
 
 * iOS 9.0+
 * Xcode 9.0+
-* Swift 4.0+
+* Swift 3.2+
 
 ## Installation
 
