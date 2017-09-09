@@ -23,7 +23,7 @@ DerivedData
 .bundle
 
 # Cocoapods
-Pods/
+# Pods/
 
 # Carthage
 Carthage/

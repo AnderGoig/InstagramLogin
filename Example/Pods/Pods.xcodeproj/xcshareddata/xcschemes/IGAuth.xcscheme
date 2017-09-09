@@ -17,7 +17,7 @@
                BlueprintIdentifier = "B1FA75990B8F79E13E33B06CEE7C5740"
                BuildableName = "IGAuth.framework"
                BlueprintName = "IGAuth"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,7 +50,7 @@
             BlueprintIdentifier = "B1FA75990B8F79E13E33B06CEE7C5740"
             BuildableName = "IGAuth.framework"
             BlueprintName = "IGAuth"
-            ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
