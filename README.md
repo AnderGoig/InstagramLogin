@@ -46,12 +46,25 @@ Third, go ahead and test it! :rocket:
 
 ### CocoaPods
 
-IGAuth is available through [CocoaPods](http://cocoapods.org). To install
+`IGAuth` is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'IGAuth'
 ```
+
+### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+To integrate `IGAuth` into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "AnderGoig/IGAuth"
+```
+
+Follow the detailed guidelines [here](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos).
+
 
 ## Usage
 
