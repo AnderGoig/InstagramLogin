@@ -22,7 +22,7 @@ class AccountsViewController: UITableViewController {
     func addAccount() {
         let vc = IGAuthViewController(clientID: clientID, clientSecret: clientSecret, redirectURI: redirectURI) { (response) in
             guard let response = response else {
-                print("An error ocurred while login in Instagram")
+                print("An error occurred while login in Instagram")
                 return
             }
             

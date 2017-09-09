@@ -221,10 +221,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 75Z728ZJJT;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 75Z728ZJJT;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -515,6 +517,7 @@
 			baseConfigurationReference = E9CCC57E282057AD38FC07B3 /* Pods-IGAuth_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75Z728ZJJT;
 				INFOPLIST_FILE = IGAuth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -530,6 +533,7 @@
 			baseConfigurationReference = 83FCA709DCD9CA8C1731A4C2 /* Pods-IGAuth_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75Z728ZJJT;
 				INFOPLIST_FILE = IGAuth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -544,6 +548,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60D83755018FDA8A01FA5614 /* Pods-IGAuth_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 75Z728ZJJT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -564,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 864EF817576C7880F51F0D80 /* Pods-IGAuth_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 75Z728ZJJT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

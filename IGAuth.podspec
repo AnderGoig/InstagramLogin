@@ -16,7 +16,7 @@ by showing a custom View Controller with Instagram's login page.
                        DESC
 
   s.homepage         = 'https://github.com/AnderGoig/IGAuth'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots      = 'https://raw.githubusercontent.com/AnderGoig/IGAuth/master/IGAuth-Scrennshot.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'AnderGoig' => 'goig.ander@gmail.com' }
   s.source           = { :git => 'https://github.com/AnderGoig/IGAuth.git', :tag => "v#{s.version.to_s}" }
@@ -25,7 +25,7 @@ by showing a custom View Controller with Instagram's login page.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'IGAuth/Classes/**/*'
-  
+
   s.resource_bundles = {
     'IGAuth' => ['IGAuth/Assets/*.png']
   }

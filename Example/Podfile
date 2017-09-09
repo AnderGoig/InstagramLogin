@@ -1,3 +1,4 @@
+platform :ios, '9.0'
 use_frameworks!
 
 target 'IGAuth_Example' do
@@ -6,6 +7,5 @@ target 'IGAuth_Example' do
   target 'IGAuth_Tests' do
     inherit! :search_paths
 
-    
   end
 end
