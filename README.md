@@ -12,7 +12,7 @@ Handles all the **Instagram authentication** process by showing a custom `UIView
 Inspired by projects like [InstagramAuthViewController](https://github.com/Isuru-Nanayakkara/InstagramAuthViewController) and [InstagramSimpleOAuth](https://github.com/rbaumbach/InstagramSimpleOAuth), because of the need for a **simple** and **easy** way to authenticate Instagram users.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/AnderGoig/IGAuth/master/IGAuth-Demo.gif" alt="IGAuth Demo (GIF)">
+<img src="https://raw.githubusercontent.com/AnderGoig/IGAuth/master/IGAuth-Demo.gif" alt="IGAuth Demo (GIF)" width="376" height="668">
 </p>
 
 ## Features
