@@ -16,6 +16,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7751E46D1F635C820075609F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7751E46C1F635C820075609F /* Constants.swift */; };
+		7751E46F1F636AD60075609F /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 7751E46E1F636AD60075609F /* CHANGELOG.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		60D83755018FDA8A01FA5614 /* Pods-IGAuth_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGAuth_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGAuth_Tests/Pods-IGAuth_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7751E46C1F635C820075609F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7751E46E1F636AD60075609F /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		83FCA709DCD9CA8C1731A4C2 /* Pods-IGAuth_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGAuth_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGAuth_Example/Pods-IGAuth_Example.release.xcconfig"; sourceTree = "<group>"; };
 		864EF817576C7880F51F0D80 /* Pods-IGAuth_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGAuth_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGAuth_Tests/Pods-IGAuth_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DB08A750707EDBF0D1BC3592 /* Pods_IGAuth_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGAuth_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +76,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				607FACF51AFB993E008FA782 /* Metadata */,
 				607FACD21AFB9204008FA782 /* Example for IGAuth */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -132,14 +134,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+		607FACF51AFB993E008FA782 /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
 				02A752235FCE78CAA28E57B9 /* IGAuth.podspec */,
 				DBFC2884000162F3F3A89CE7 /* README.md */,
 				265E80565A6CF61824D65218 /* LICENSE */,
+				7751E46E1F636AD60075609F /* CHANGELOG.md */,
 			);
-			name = "Podspec Metadata";
+			name = Metadata;
 			sourceTree = "<group>";
 		};
 		C566616A9B7451FB645CEC00 /* Frameworks */ = {
@@ -254,6 +257,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				7751E46F1F636AD60075609F /* CHANGELOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
