@@ -27,7 +27,7 @@ Inspired by projects like [InstagramAuthViewController](https://github.com/Isuru
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-Second, create a `Constants.swift` file with the following:
+Second, edit the `Constants.swift` file with your client info from Instagram's [developer portal](https://www.instagram.com/developer/clients/manage/):
 
 ```swift
 let clientID = "YOUR CLIENT ID GOES HERE"
