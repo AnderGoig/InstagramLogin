@@ -73,7 +73,7 @@ public class IGAuthViewController: UIViewController {
         webView.navigationDelegate = self
         
         // Initialize progress view
-        progressView = UIProgressView(frame: CGRect(x: 0, y: 64, width: self.view.frame.width, height: 50))
+        progressView = UIProgressView(frame: CGRect(x: 0, y: self.topBarHeight, width: self.view.frame.width, height: 50))
         progressView.progress = 0.0
         progressView.tintColor = self.progressViewTintColor
         
@@ -186,6 +186,16 @@ extension IGAuthViewController: WKNavigationDelegate {
             return
         }
         decisionHandler(.allow)
+    }
+    
+}
+
+extension UIViewController {
+    
+    var topBarHeight: CGFloat {
+        let statusBarHeight = UIApplication.shared.statusBarFrame.height
+        let navigationBarHeight = self.navigationController?.navigationBar.frame.height ?? 0
+        return statusBarHeight + navigationBarHeight
     }
     
 }
