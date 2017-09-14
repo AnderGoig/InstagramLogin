@@ -66,6 +66,10 @@ github "AnderGoig/IGAuth"
 
 Follow the detailed guidelines [here](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos).
 
+### Manual installation
+
+Simply copy the two Swift files inside the `IGAuth/Classes` into your project.
+
 
 ## Usage
 
