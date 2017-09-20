@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,7 +19,6 @@
 		95DA90392765A9BE6FCE380E33786BFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56436A2FB37A744525EE65E2B0576D5 /* UIKit.framework */; };
 		9681D71DCC51E795ADF92032C9D04CE5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEB735D4043832C803025569E2C5A0C /* MobileCoreServices.framework */; };
 		9A0287B291EBDB986B559A411E92A0E3 /* 1PasswordExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A24B1FAC1CB01545CFE643993A9143F /* 1PasswordExtension-dummy.m */; };
-		A376A2FA5C9279B50A8E4B87F93DFF9C /* IGAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF089FE48CF4FFCE7763E054BCBC1C9 /* IGAuthResponse.swift */; };
 		A3A12FA8A3CE43808760DE9F35476AF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57D47FA83BC92E9E3EB41FE19C8518A0 /* Foundation.framework */; };
 		A5BD636E36B1DD1A34CDD6FBC99FD53C /* Pods-IGAuth_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB71DECD8A6FA40BFCA1A4CB7AD3CA60 /* Pods-IGAuth_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7928CE577F408DEFD5A2C1A115E5FDF /* IGAuth.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1774AABBD2611EBBE5344E8276D92F08 /* IGAuth.bundle */; };
@@ -75,15 +74,15 @@
 /* Begin PBXFileReference section */
 		08D5A17A67FE3A021B2E3974C69D8959 /* IGAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IGAuth.xcconfig; sourceTree = "<group>"; };
 		0B7AE26D8F9101E22616C14C24504C08 /* IGAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGAuth-umbrella.h"; sourceTree = "<group>"; };
-		1774AABBD2611EBBE5344E8276D92F08 /* IGAuth.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = IGAuth.bundle; path = IGAuth.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		190B7EB90EA712729094B9322719EB1E /* IGAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IGAuth.framework; path = IGAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1774AABBD2611EBBE5344E8276D92F08 /* IGAuth.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGAuth.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		190B7EB90EA712729094B9322719EB1E /* IGAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IGAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFE67057AC6EB1C127CF363829A3257 /* 1PasswordExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "1PasswordExtension-prefix.pch"; sourceTree = "<group>"; };
-		1F5708FCFD4F40C977F92A79EB2C0C6F /* Pods_IGAuth_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IGAuth_Example.framework; path = "Pods-IGAuth_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5708FCFD4F40C977F92A79EB2C0C6F /* Pods_IGAuth_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGAuth_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F9C396B736BAF4273B0487C0175086 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		270AB5A3AA7EFB034D565537F8FE2B87 /* OnePasswordExtensionResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = OnePasswordExtensionResources.bundle; path = OnePasswordExtensionResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		270AB5A3AA7EFB034D565537F8FE2B87 /* OnePasswordExtensionResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnePasswordExtensionResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AEB735D4043832C803025569E2C5A0C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		2F1768D756D0395171446D782619BB36 /* OnePasswordExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OnePasswordExtension.m; sourceTree = "<group>"; };
-		38B5547B8B3C5DE13F708F00D6457595 /* Pods-IGAuth_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-IGAuth_Tests.modulemap"; sourceTree = "<group>"; };
+		38B5547B8B3C5DE13F708F00D6457595 /* Pods-IGAuth_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-IGAuth_Tests.modulemap"; sourceTree = "<group>"; };
 		3A24B1FAC1CB01545CFE643993A9143F /* 1PasswordExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "1PasswordExtension-dummy.m"; sourceTree = "<group>"; };
 		3F0F7C170DF455B3891CC7ABD0C9B9EA /* Pods-IGAuth_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IGAuth_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4359821355C6EF0357DE6A73DFF861A7 /* IGAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGAuth-prefix.pch"; sourceTree = "<group>"; };
@@ -93,17 +92,17 @@
 		56A5C2412E24093C86E6F6E4EA97B32A /* Pods-IGAuth_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IGAuth_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		574A3C400E4281CE282CC9A02637B4B7 /* Pods-IGAuth_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IGAuth_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		57D47FA83BC92E9E3EB41FE19C8518A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		58915709B518FBE8432A92F8C9D630A0 /* IGAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IGAuth.modulemap; sourceTree = "<group>"; };
-		5949D85B863A38365D54E0DFE4A74F6B /* Pods-IGAuth_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-IGAuth_Example.modulemap"; sourceTree = "<group>"; };
+		58915709B518FBE8432A92F8C9D630A0 /* IGAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = IGAuth.modulemap; sourceTree = "<group>"; };
+		5949D85B863A38365D54E0DFE4A74F6B /* Pods-IGAuth_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-IGAuth_Example.modulemap"; sourceTree = "<group>"; };
 		5C1FBD539E64F52BF4BF57CBAD9C6D64 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60A3F968FDF51728FB6AC381B36D65A9 /* Pods-IGAuth_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IGAuth_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6488DA54D64936319D142381DA7D2FEF /* Pods-IGAuth_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IGAuth_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		7BBDC2D65C64C744EF7825CC97187812 /* Pods-IGAuth_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IGAuth_Tests-resources.sh"; sourceTree = "<group>"; };
-		7D119A3ED7E9EF9D00D0CC5BA64703B8 /* OnePasswordExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OnePasswordExtension.framework; path = 1PasswordExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D119A3ED7E9EF9D00D0CC5BA64703B8 /* OnePasswordExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnePasswordExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8059A1579DCAD3C1EB7A730A5FEEDF9C /* Pods-IGAuth_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IGAuth_Example-resources.sh"; sourceTree = "<group>"; };
 		841C4B96AB6EDEA8099F0523FFFA67E1 /* Pods-IGAuth_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IGAuth_Tests-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95690016A4195DE492829049D979E466 /* Pods_IGAuth_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IGAuth_Tests.framework; path = "Pods-IGAuth_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95690016A4195DE492829049D979E466 /* Pods_IGAuth_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGAuth_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96ED940B5BBA6B7B2BF7EB9E09E99F1B /* ResourceBundle-IGAuth-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-IGAuth-Info.plist"; sourceTree = "<group>"; };
 		9F73FA5214326D51F4BA11F57D3E3FC4 /* Pods-IGAuth_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IGAuth_Example-dummy.m"; sourceTree = "<group>"; };
 		A44FFED5AA792BBB9C7B858BA727EB34 /* 1PasswordNavbar@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "1PasswordNavbar@3x.png"; path = "IGAuth/Assets/1PasswordNavbar@3x.png"; sourceTree = "<group>"; };
@@ -122,8 +121,7 @@
 		E76A4B66BCF950DE794B4986E6E2C7FB /* ResourceBundle-OnePasswordExtensionResources-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-OnePasswordExtensionResources-Info.plist"; sourceTree = "<group>"; };
 		E7DF7641A8C2632F9EB7F0A67257470B /* 1PasswordExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "1PasswordExtension-umbrella.h"; sourceTree = "<group>"; };
 		EDD0C19AE91097E05FB8252C2CE06DFF /* Pods-IGAuth_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IGAuth_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		EEF089FE48CF4FFCE7763E054BCBC1C9 /* IGAuthResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IGAuthResponse.swift; path = IGAuth/Classes/IGAuthResponse.swift; sourceTree = "<group>"; };
-		F1A86928657B87A869C27E917EDFCEFF /* 1PasswordExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = 1PasswordExtension.modulemap; sourceTree = "<group>"; };
+		F1A86928657B87A869C27E917EDFCEFF /* 1PasswordExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = 1PasswordExtension.modulemap; sourceTree = "<group>"; };
 		FA5E5C9A99A0AE6E289AE165AA441D57 /* 1PasswordNavbar@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "1PasswordNavbar@2x.png"; path = "IGAuth/Assets/1PasswordNavbar@2x.png"; sourceTree = "<group>"; };
 		FB71DECD8A6FA40BFCA1A4CB7AD3CA60 /* Pods-IGAuth_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IGAuth_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,7 +210,6 @@
 				514A027E9A38D0A54EC868E7F8E93DB5 /* Resources */,
 				D992E9387AE0FEE64A3923BADB68416B /* Support Files */,
 			);
-			name = 1PasswordExtension;
 			path = 1PasswordExtension;
 			sourceTree = "<group>";
 		};
@@ -303,7 +300,6 @@
 		859F28CAE4CD6CA290921BECF67370B9 /* IGAuth */ = {
 			isa = PBXGroup;
 			children = (
-				EEF089FE48CF4FFCE7763E054BCBC1C9 /* IGAuthResponse.swift */,
 				C314676377C57857E14AA0EC17CA51D6 /* IGAuthViewController.swift */,
 				81BD4B04AD8591C5DE809EC887D0897D /* Resources */,
 				278ACDB4ABDD0F4DC68ADFF06CD7B2A8 /* Support Files */,
@@ -612,7 +608,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E4F9170102831E86456146A66F51C8C /* IGAuth-dummy.m in Sources */,
-				A376A2FA5C9279B50A8E4B87F93DFF9C /* IGAuthResponse.swift in Sources */,
 				CF771BFFF6D82D8215E4096A91341411 /* IGAuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -31,7 +31,6 @@ Second, edit the `Constants.swift` file with your client info from Instagram's [
 
 ```swift
 let clientID = "YOUR CLIENT ID GOES HERE"
-let clientSecret = "YOUR CLIENT SECRET GOES HERE"
 let redirectURI = "YOUR REDIRECT URI GOES HERE"
 ```
 
@@ -68,7 +67,7 @@ Follow the detailed guidelines [here](https://github.com/Carthage/Carthage#if-yo
 
 ### Manual installation
 
-Simply copy the two Swift files inside the `IGAuth/Classes` into your project.
+Simply copy the file `IGAuthViewController.swift` from `IGAuth/Classes` into your project.
 
 
 ## Usage
@@ -77,16 +76,15 @@ Simply copy the two Swift files inside the `IGAuth/Classes` into your project.
 
 ```swift
 let clientID = "YOUR CLIENT ID GOES HERE"
-let clientSecret = "YOUR CLIENT SECRET GOES HERE"
 let redirectURI = "YOUR REDIRECT URI GOES HERE"
 ```
 
 - **Initialize** your `IGAuthViewController`:
 
 ```swift
-let vc = IGAuthViewController(clientID: clientID, clientSecret: clientSecret, redirectURI: redirectURI) { (response) in
-    guard let response = response else {
-        print("An error occurred while login in Instagram")
+let vc = IGAuthViewController(clientID: clientID, redirectURI: redirectURI) { (accessToken) in
+    guard let accessToken = accessToken else {
+        print("Failed login")
         return
     }
 

@@ -9,5 +9,4 @@
 import Foundation
 
 let clientID = "YOUR CLIENT ID GOES HERE"
-let clientSecret = "YOUR CLIENT SECRET GOES HERE"
 let redirectURI = "YOUR REDIRECT URI GOES HERE"

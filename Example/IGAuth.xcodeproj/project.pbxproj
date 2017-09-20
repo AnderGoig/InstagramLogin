@@ -7,27 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00ABDB0FA75D799A22E676E4 /* Pods_IGAuth_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB08A750707EDBF0D1BC3592 /* Pods_IGAuth_Tests.framework */; };
 		3AE6C46954068C171D51BFCB /* Pods_IGAuth_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A6D4813CFAD3DA308CBA80 /* Pods_IGAuth_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* AccountsViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7751E46D1F635C820075609F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7751E46C1F635C820075609F /* Constants.swift */; };
 		7751E46F1F636AD60075609F /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 7751E46E1F636AD60075609F /* CHANGELOG.md */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = IGAuth;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02A752235FCE78CAA28E57B9 /* IGAuth.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IGAuth.podspec; path = ../IGAuth.podspec; sourceTree = "<group>"; };
@@ -40,9 +28,6 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* IGAuth_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGAuth_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		60D83755018FDA8A01FA5614 /* Pods-IGAuth_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGAuth_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGAuth_Tests/Pods-IGAuth_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7751E46C1F635C820075609F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7751E46E1F636AD60075609F /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
@@ -62,14 +47,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00ABDB0FA75D799A22E676E4 /* Pods_IGAuth_Tests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,7 +55,6 @@
 			children = (
 				607FACF51AFB993E008FA782 /* Metadata */,
 				607FACD21AFB9204008FA782 /* Example for IGAuth */,
-				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				DB5BCE564D756DF430864728 /* Pods */,
 				C566616A9B7451FB645CEC00 /* Frameworks */,
@@ -89,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* IGAuth_Example.app */,
-				607FACE51AFB9204008FA782 /* IGAuth_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,23 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -188,27 +146,6 @@
 			productReference = 607FACD01AFB9204008FA782 /* IGAuth_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* IGAuth_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "IGAuth_Tests" */;
-			buildPhases = (
-				34F60054AED45E92A28169F9 /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				D7C421D420239C72B9587205 /* [CP] Embed Pods Frameworks */,
-				4EE25D9A1F5220C6F52C975B /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
-			);
-			name = IGAuth_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* IGAuth_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -223,12 +160,6 @@
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 75Z728ZJJT;
 						LastSwiftMigration = 0820;
-					};
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 75Z728ZJJT;
-						LastSwiftMigration = 0820;
-						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -246,7 +177,6 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* IGAuth_Example */,
-				607FACE41AFB9204008FA782 /* IGAuth_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,34 +193,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE31AFB9204008FA782 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		34F60054AED45E92A28169F9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IGAuth_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		38DF63EDBA46D27AC40A2265 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,21 +214,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4EE25D9A1F5220C6F52C975B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IGAuth_Tests/Pods-IGAuth_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9CE59D4E06083A30F45376D6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,21 +227,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IGAuth_Example/Pods-IGAuth_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D7C421D420239C72B9587205 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IGAuth_Tests/Pods-IGAuth_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DD0F7C8A0FEFBB81105488C0 /* [CP] Embed Pods Frameworks */ = {
@@ -387,23 +262,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		607FACE11AFB9204008FA782 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* IGAuth_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
@@ -544,44 +403,6 @@
 			};
 			name = Release;
 		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60D83755018FDA8A01FA5614 /* Pods-IGAuth_Tests.debug.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 75Z728ZJJT;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		607FACF41AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 864EF817576C7880F51F0D80 /* Pods-IGAuth_Tests.release.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 75Z728ZJJT;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -599,15 +420,6 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "IGAuth_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

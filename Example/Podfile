@@ -3,9 +3,4 @@ use_frameworks!
 
 target 'IGAuth_Example' do
   pod 'IGAuth', :path => '../'
-
-  target 'IGAuth_Tests' do
-    inherit! :search_paths
-
-  end
 end

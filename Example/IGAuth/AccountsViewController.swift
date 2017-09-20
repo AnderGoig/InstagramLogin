@@ -10,53 +10,52 @@ import UIKit
 import IGAuth
 
 class AccountsViewController: UITableViewController {
-    
-    var accounts = [IGAuthResponse]()
+
+    var accessTokens = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAccount))
+
+        let rightBarButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAccount))
+        self.navigationItem.rightBarButtonItem = rightBarButton
     }
-    
+
     func addAccount() {
-        let vc = IGAuthViewController(clientID: clientID, clientSecret: clientSecret, redirectURI: redirectURI) { (response) in
-            guard let response = response else {
-                print("An error occurred while login in Instagram")
+        let vc = IGAuthViewController(clientID: clientID, redirectURI: redirectURI) { (accessToken) in
+            guard let accessToken = accessToken else {
+                print("Failed login")
                 return
             }
-            
+
             DispatchQueue.main.async {
                 self.navigationController?.popViewController(animated: true)
-                
-                self.accounts.append(response)
+
+                self.accessTokens.append(accessToken)
                 self.tableView.reloadData()
             }
         }
-        
+
         vc.authScope = "basic+public_content"
-        
+
         show(vc, sender: self)
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return accounts.count
+        return accessTokens.count
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "IGAccountCell", for: indexPath)
-        
-        let account = accounts[indexPath.row]
-        
-        cell.textLabel?.text = account.user.full_name
-        cell.detailTextLabel?.text = "@" + account.user.username
-        
+
+        let accessToken = accessTokens[indexPath.row]
+
+        cell.textLabel?.text = accessToken
+
         return cell
     }
-    
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
 }
-
