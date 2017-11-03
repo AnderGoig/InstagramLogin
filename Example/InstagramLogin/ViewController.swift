@@ -17,7 +17,7 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
 
         let rightBarButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAccount))
-        self.navigationItem.rightBarButtonItem = rightBarButton
+        navigationItem.rightBarButtonItem = rightBarButton
     }
 
     @objc func addAccount() {
@@ -27,12 +27,10 @@ class ViewController: UITableViewController {
                 return
             }
 
-            DispatchQueue.main.async {
-                self.navigationController?.popViewController(animated: true)
+            self.navigationController?.popViewController(animated: true)
 
-                self.accessTokens.append(accessToken)
-                self.tableView.reloadData()
-            }
+            self.accessTokens.append(accessToken)
+            self.tableView.reloadData()
         }
 
         vc.scopes = [.basic, .publicContent]
