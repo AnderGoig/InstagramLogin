@@ -14,7 +14,7 @@
 Inspired by projects like [InstagramAuthViewController](https://github.com/Isuru-Nanayakkara/InstagramAuthViewController) and [InstagramSimpleOAuth](https://github.com/rbaumbach/InstagramSimpleOAuth), because of the need for a **simple** and **easy** way to authenticate Instagram users.
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/AnderGoig/InstagramLogin/master/InstagramLogin-Demo.gif"
+    <img src="https://raw.githubusercontent.com/AnderGoig/InstagramLogin/master/.assets/InstagramLogin-Demo.gif"
          alt="InstagramLogin Demo (GIF)" width="375" height="667">
 </p>
 
