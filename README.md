@@ -36,7 +36,7 @@ Fourth, go ahead and test it! :rocket:
 
 * iOS 9.0+
 * Xcode 9.0+
-* Swift 3.2+
+* Swift 4.0+
 
 ## Installation
 
@@ -63,8 +63,7 @@ Follow the detailed guidelines [here](https://github.com/Carthage/Carthage#if-yo
 
 ### Manual installation
 
-Simply copy the file [InstagramLoginViewController.swift](InstagramLogin/Classes/InstagramLoginViewController.swift) into your Xcode project.
-
+Simply copy all the Swift files from the [Classes](InstagramLogin/Classes) folder into your Xcode project.
 
 ## Usage
 
@@ -80,16 +79,14 @@ Simply copy the file [InstagramLoginViewController.swift](InstagramLogin/Classes
 3. **Initialize** your `InstagramLoginViewController`:
 
     ```swift
-    let vc = InstagramLoginViewController(clientID: clientID, redirectURI: redirectURI) { (accessToken) in
+    let vc = InstagramLoginViewController(clientID: clientID, redirectURI: redirectURI) { accessToken, error in
         guard let accessToken = accessToken else {
-            print("Failed login")
+            print("Failed login: " + error!.localizedDescription)
             return
         }
 
-        DispatchQueue.main.async {
-            self.navigationController?.popViewController(animated: true)
-            // Do your stuff ...
-        }
+        self.navigationController?.popViewController(animated: true)
+        // Do your stuff ...
     }
     ```
 
@@ -97,16 +94,13 @@ Simply copy the file [InstagramLoginViewController.swift](InstagramLogin/Classes
 
     ```swift
     // Login permissions (https://www.instagram.com/developer/authorization/)
-    vc.authScope = "basic+public_content" // basic by default
+    vc.scopes = [.basic, .publicContent] // basic by default
 
     // ViewController title, website title by default
     vc.customTitle = "Instagram" // By default, the web title is displayed
 
     // Progress view tint color
     vc.progressViewTintColor = UIColor.green // #E1306C by default
-
-    // 1Password integration
-    vc.allowOnePasswordIntegration = false // true by default
     ```
 
 5. **Show** it:
