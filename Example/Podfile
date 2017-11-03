@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'InstagramLogin_Example' do
+  pod 'InstagramLogin', :path => '../'
+
+  target 'InstagramLogin_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
