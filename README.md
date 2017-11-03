@@ -5,6 +5,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/InstagramLogin.svg?style=flat)](http://cocoapods.org/pods/InstagramLogin)
 [![Version](https://img.shields.io/cocoapods/v/InstagramLogin.svg?style=flat)](http://cocoapods.org/pods/InstagramLogin)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![codebeat badge](https://codebeat.co/badges/973c1f62-6fc3-42bd-ae51-013d38cb6da7)](https://codebeat.co/projects/github-com-andergoig-instagramlogin-master)
 
 > InstagramLogin allows iOS developers to authenticate users by their Instagram accounts.
 
