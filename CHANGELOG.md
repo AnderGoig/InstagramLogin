@@ -12,6 +12,7 @@
 - 1Password library extension.
 
 ## [1.1.0] (2017-09-20)
+[Full Changelog](https://github.com/AnderGoig/InstagramLogin/compare/v1.0.3...v1.1.0)
 ### Added
 - Code is now simpler and more clean.
 ### Changed
@@ -21,14 +22,17 @@
 - On successful logins, the information about the authenticated user is not returned any more, just the access token.
 
 ## [1.0.3] (2017-09-13)
+[Full Changelog](https://github.com/AnderGoig/InstagramLogin/compare/v1.0.2...v1.0.3)
 ### Fixed
 - The progress view now automatically adjusts, regardless of top bar height.
 
 ## [1.0.2] (2017-09-10)
+[Full Changelog](https://github.com/AnderGoig/InstagramLogin/compare/v1.0.1...v1.0.2)
 ### Added
 - Carthage support.
 
 ## [1.0.1] (2017-09-09)
+[Full Changelog](https://github.com/AnderGoig/InstagramLogin/compare/v1.0.0...v1.0.1)
 ### Added
 - Travis CI support.
 ### Fixed
