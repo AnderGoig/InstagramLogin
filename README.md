@@ -63,7 +63,7 @@ Follow the detailed guidelines [here](https://github.com/Carthage/Carthage#if-yo
 
 ### Manual installation
 
-Simply copy all the Swift files from the [Classes](InstagramLogin/Classes) folder into your Xcode project.
+Simply copy all the Swift files from the [InstagramLogin/Classes](InstagramLogin/Classes) folder into your Xcode project.
 
 ## Usage
 
