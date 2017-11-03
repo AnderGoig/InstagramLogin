@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		613AD2F1301AE5CA81F5505E /* Pods_InstagramLogin_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9724C09315E63C8DCAC0B2 /* Pods_InstagramLogin_Example.framework */; };
+		773077511FACC05B00CA5D78 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773077501FACC05B00CA5D78 /* Constants.swift */; };
 		CF2A9168524C9AB456A1ADEA /* Pods_InstagramLogin_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DCED30AB15AA4B92BBE0B2 /* Pods_InstagramLogin_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,12 +42,13 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6942F957FDC1C5CDC3B51345 /* Pods-InstagramLogin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramLogin_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramLogin_Tests/Pods-InstagramLogin_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8CD67E203E3DA3DDA98C9A0C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		773077501FACC05B00CA5D78 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8CD67E203E3DA3DDA98C9A0C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AF9724C09315E63C8DCAC0B2 /* Pods_InstagramLogin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramLogin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3177EA7DE27ACB047D57362 /* InstagramLogin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = InstagramLogin.podspec; path = ../InstagramLogin.podspec; sourceTree = "<group>"; };
+		B3177EA7DE27ACB047D57362 /* InstagramLogin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = InstagramLogin.podspec; path = ../InstagramLogin.podspec; sourceTree = "<group>"; };
 		C5DCED30AB15AA4B92BBE0B2 /* Pods_InstagramLogin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramLogin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4C6F5D1EAAACE6FBC4A1D1 /* Pods-InstagramLogin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramLogin_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramLogin_Example/Pods-InstagramLogin_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EDB42456E07B63660B474E0A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EDB42456E07B63660B474E0A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				773077501FACC05B00CA5D78 /* Constants.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -215,10 +218,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 75Z728ZJJT;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 75Z728ZJJT;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -372,6 +377,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				773077511FACC05B00CA5D78 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +523,7 @@
 			baseConfigurationReference = 11545BB4746BD8B5D9A67AA0 /* Pods-InstagramLogin_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75Z728ZJJT;
 				INFOPLIST_FILE = InstagramLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -532,6 +539,7 @@
 			baseConfigurationReference = CF4C6F5D1EAAACE6FBC4A1D1 /* Pods-InstagramLogin_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75Z728ZJJT;
 				INFOPLIST_FILE = InstagramLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -546,6 +554,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5CD8F9B2AEA4228CEBCFE2EE /* Pods-InstagramLogin_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 75Z728ZJJT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -567,6 +576,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6942F957FDC1C5CDC3B51345 /* Pods-InstagramLogin_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 75Z728ZJJT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
