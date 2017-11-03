@@ -16,13 +16,6 @@ Inspired by projects like [InstagramAuthViewController](https://github.com/Isuru
 <img src="https://raw.githubusercontent.com/AnderGoig/InstagramLogin/master/InstagramLogin-Demo.gif" alt="InstagramLogin Demo (GIF)" width="376" height="668">
 </p>
 
-## Features
-
-- [x] Customizable Options
-- [x] Multiple Accounts Login
-- [x] 1Password Extension Support
-- [ ] More Coming...
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
