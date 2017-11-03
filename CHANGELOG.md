@@ -6,6 +6,7 @@
 [Full Changelog](https://github.com/AnderGoig/InstagramLogin/compare/v1.1.0...v1.2.0)
 ### Added
 - Error handling for invalid requests.
+- Code is now simpler and more clean.
 ### Changed
 - Library renamed from IGAuth to InstagramLogin.
 ### Removed
