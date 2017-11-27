@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [1.2.1] (2017-11-27)
+[Full Changelog](https://github.com/AnderGoig/InstagramLogin/compare/v1.2.0...v1.2.1)
+### Fixed
+- Carthage building problem (#1).
+
 ## [1.2.0] (2017-11-03)
 [Full Changelog](https://github.com/AnderGoig/InstagramLogin/compare/v1.1.0...v1.2.0)
 ### Added
@@ -43,7 +48,8 @@
 ### Added
 - Initial release of IGAuth.
 
-[Unreleased]: https://github.com/AnderGoig/InstagramLogin/compare/v1.2.0...develop
+[Unreleased]: https://github.com/AnderGoig/InstagramLogin/compare/v1.2.1...develop
+[1.2.1]: https://github.com/AnderGoig/InstagramLogin/tree/v1.2.1
 [1.2.0]: https://github.com/AnderGoig/InstagramLogin/tree/v1.2.0
 [1.1.0]: https://github.com/AnderGoig/InstagramLogin/tree/v1.1.0
 [1.0.3]: https://github.com/AnderGoig/InstagramLogin/tree/v1.0.3

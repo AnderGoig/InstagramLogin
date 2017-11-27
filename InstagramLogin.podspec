@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = 'InstagramLogin'
-  s.version             = '1.2.0'
+  s.version             = '1.2.1'
   s.cocoapods_version   = '>= 1.1.0'
   s.authors             = { 'Ander Goig' => 'goig.ander@gmail.com' }
   s.license             = { :type => 'MIT', :file => 'LICENSE' }
