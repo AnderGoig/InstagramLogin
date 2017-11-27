@@ -1,0 +1,6 @@
+framework module InstagramLogin {
+  umbrella header "InstagramLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}
