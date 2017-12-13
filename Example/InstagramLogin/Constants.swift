@@ -8,5 +8,7 @@
 
 import Foundation
 
-let clientID = "YOUR CLIENT ID GOES HERE"
-let redirectURI = "YOUR REDIRECT URI GOES HERE"
+struct Constants {
+    static let clientId = "<YOUR CLIENT ID GOES HERE>"
+    static let redirectUri = "<YOUR REDIRECT URI GOES HERE>"
+}

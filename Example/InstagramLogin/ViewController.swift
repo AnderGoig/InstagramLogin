@@ -9,51 +9,51 @@
 import UIKit
 import InstagramLogin
 
-class ViewController: UITableViewController {
+class ViewController: UIViewController {
 
-    var accessTokens = [String]()
+    // MARK: - Properties
+    
+    var instagramLogin: InstagramLoginViewController!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // MARK: - Actions
 
-        let rightBarButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAccount))
-        navigationItem.rightBarButtonItem = rightBarButton
+    @IBAction func login() {
+        instagramLogin = InstagramLoginViewController(clientId: Constants.clientId, redirectUri: Constants.redirectUri)
+        instagramLogin.delegate = self
+        instagramLogin.scopes = [.all]
+
+        instagramLogin.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(dismissLoginViewController))
+        instagramLogin.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refreshPage))
+
+        present(UINavigationController(rootViewController: instagramLogin), animated: true)
     }
 
-    @objc func addAccount() {
-        let vc = InstagramLoginViewController(clientID: clientID, redirectURI: redirectURI) { accessToken, error in
-            guard let accessToken = accessToken else {
-                print("Failed login: " + error!.localizedDescription)
-                return
-            }
+    func showAlertView(title: String, message: String) {
+        let alertView = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertView.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+        present(alertView, animated: true)
+    }
 
-            self.navigationController?.popViewController(animated: true)
+    @objc func dismissLoginViewController() {
+        instagramLogin.dismiss(animated: true)
+    }
 
-            self.accessTokens.append(accessToken)
-            self.tableView.reloadData()
+    @objc func refreshPage() {
+        instagramLogin.reloadPage()
+    }
+}
+
+// MARK: - InstagramLoginViewControllerDelegate
+
+extension ViewController: InstagramLoginViewControllerDelegate {
+
+    func instagramLoginDidFinish(accessToken: String?, error: InstagramError?) {
+        dismissLoginViewController()
+
+        if accessToken != nil {
+            showAlertView(title: "Successfully logged in! 👍", message: "")
+        } else {
+            showAlertView(title: "\(error!.localizedDescription) 👎", message: "")
         }
-
-        vc.scopes = [.basic, .publicContent]
-
-        show(vc, sender: self)
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return accessTokens.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "InstagramLoginCell", for: indexPath)
-
-        let accessToken = accessTokens[indexPath.row]
-
-        cell.textLabel?.text = accessToken
-
-        return cell
-    }
-
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-
 }

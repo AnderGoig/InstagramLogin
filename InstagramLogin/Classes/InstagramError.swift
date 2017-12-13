@@ -11,6 +11,7 @@
 public struct InstagramError: Error {
 
     // MARK: - Properties
+
     let kind: ErrorKind
     let message: String
 
@@ -20,6 +21,7 @@ public struct InstagramError: Error {
     }
 
     // MARK: - Types
+
     enum ErrorKind: CustomStringConvertible {
         case invalidRequest
 

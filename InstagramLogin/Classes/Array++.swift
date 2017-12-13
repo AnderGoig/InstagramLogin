@@ -11,5 +11,4 @@ extension Array where Element == InstagramScope {
     func joined(separator: String) -> String {
         return self.map({ "\($0.rawValue)" }).joined(separator: separator)
     }
-
 }
