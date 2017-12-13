@@ -27,8 +27,8 @@ Second, go to your Instagram's [developer portal](https://www.instagram.com/deve
 Third, edit the `Constants.swift` file with your client info from Instagram's [developer portal](https://www.instagram.com/developer/clients/manage/):
 
 ```swift
-let clientID = "YOUR CLIENT ID GOES HERE"
-let redirectURI = "YOUR REDIRECT URI GOES HERE"
+static let clientId = "<YOUR CLIENT ID GOES HERE>"
+static let redirectUri = "<YOUR REDIRECT URI GOES HERE>"
 ```
 
 Fourth, go ahead and test it! :rocket:
@@ -68,47 +68,64 @@ Simply copy all the Swift files from the [InstagramLogin/Classes](InstagramLogin
 
 ## Usage
 
-1. Go to your Instagram's [developer portal](https://www.instagram.com/developer/clients/manage/), click on _Manage_ your client, and **uncheck** the option "**Disable implicit OAuth**" from the _Security_ tab.
+First of all, go to your Instagram's [developer portal](https://www.instagram.com/developer/clients/manage/), click on _Manage_ your client, and **uncheck** the option "**Disable implicit OAuth**" from the _Security_ tab.
 
-2. Set your client info from Instagram's [developer portal](https://www.instagram.com/developer/clients/manage/):
+```swift
+import InstagramLogin // <-- VERY IMPORTANT! ;)
 
-    ```swift
-    let clientID = "YOUR CLIENT ID GOES HERE"
-    let redirectURI = "YOUR REDIRECT URI GOES HERE"
-    ```
+class YourViewController: UIViewController {
 
-3. **Initialize** your `InstagramLoginViewController`:
+    var instagramLogin: InstagramLoginViewController!
 
-    ```swift
-    let vc = InstagramLoginViewController(clientID: clientID, redirectURI: redirectURI) { accessToken, error in
-        guard let accessToken = accessToken else {
-            print("Failed login: " + error!.localizedDescription)
-            return
-        }
+    // 1. Set your client info from Instagram's developer portal (https://www.instagram.com/developer/clients/manage)
+    let clientId = "<YOUR CLIENT ID GOES HERE>"
+    let redirectUri = "<YOUR REDIRECT URI GOES HERE>"
 
-        self.navigationController?.popViewController(animated: true)
-        // Do your stuff ...
+    func loginWithInstagram() {
+
+        // 2. Initialize your 'InstagramLoginViewController' and set your 'ViewController' to delegate it
+        instagramLogin = InstagramLoginViewController(clientId: clientId, redirectUri: redirectUri)
+        instagramLogin.delegate = self
+
+        // 3. Customize it
+        instagramLogin.scopes = [.basic, .publicContent] // [.basic] by default; [.all] to set all permissions
+        instagramLogin.title = "Instagram" // If you don't specify it, the website title will be showed
+        instagramLogin.progressViewTintColor = .blue // #E1306C by default
+
+        // If you want a .stop (or other) UIBarButtonItem on the left of the view controller
+        instagramLogin.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(dismissLoginViewController))
+
+        // You could also add a refresh UIBarButtonItem on the right
+        instagramLogin.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refreshPage))
+
+        // 4. Present it inside a UINavigationController (for example)
+        present(UINavigationController(rootViewController: instagramLogin), animated: true)
     }
-    ```
 
-4. **Customize** it:
+    @objc func dismissLoginViewController() {
+        instagramLogin.dismiss(animated: true)
+    }
 
-    ```swift
-    // Login permissions (https://www.instagram.com/developer/authorization/)
-    vc.scopes = [.basic, .publicContent] // basic by default
+    @objc func refreshPage() {
+        instagramLogin.reloadPage()
+    }
 
-    // ViewController title, website title by default
-    vc.customTitle = "Instagram" // By default, the web title is displayed
+    // ...
+}
 
-    // Progress view tint color
-    vc.progressViewTintColor = UIColor.green // #E1306C by default
-    ```
+// MARK: - InstagramLoginViewControllerDelegate
 
-5. **Show** it:
+extension YourViewController: InstagramLoginViewControllerDelegate {
 
-    ```swift    
-    show(vc, sender: self)
-    ```
+    func instagramLoginDidFinish(accessToken: String?, error: InstagramError?) {
+
+        // Whatever you want to do ...
+
+        // And don't forget to dismiss the 'InstagramLoginViewController'
+        instagramLogin.dismiss(animated: true)
+    }
+}
+```
 
 ## Contributing to this project
 

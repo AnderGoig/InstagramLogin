@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## [1.3.0] (2017-12-13)
+[Full Changelog](https://github.com/AnderGoig/InstagramLogin/compare/v1.2.1...v1.3.0)
+### Added
+- New option to **set all the scope permissions** using: `instagramLogin.scopes = [.all]`.
+- New method `reloadPage()` in case you want a button (on the `UINavigationBar` maybe) to refresh the `WKWebView` (see the Example project).
+### Changed
+- The process of login has been **redesigned**, now it uses the **delegate pattern** instead of `completion:` method.
+- The **Example project** has been **updated** with those changes.
+
 ## [1.2.1] (2017-11-27)
 [Full Changelog](https://github.com/AnderGoig/InstagramLogin/compare/v1.2.0...v1.2.1)
 ### Fixed
@@ -48,7 +57,8 @@
 ### Added
 - Initial release of IGAuth.
 
-[Unreleased]: https://github.com/AnderGoig/InstagramLogin/compare/v1.2.1...develop
+[Unreleased]: https://github.com/AnderGoig/InstagramLogin/compare/v1.3.0...develop
+[1.3.0]: https://github.com/AnderGoig/InstagramLogin/tree/v1.3.0
 [1.2.1]: https://github.com/AnderGoig/InstagramLogin/tree/v1.2.1
 [1.2.0]: https://github.com/AnderGoig/InstagramLogin/tree/v1.2.0
 [1.1.0]: https://github.com/AnderGoig/InstagramLogin/tree/v1.1.0
